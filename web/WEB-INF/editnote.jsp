@@ -13,6 +13,21 @@
         <title>Edit Page</title>
     </head>
     <body>
-
+        <h1>
+            Simple Note Keeper
+        </h1>
+        <h2>
+            Edit Note
+        </h2>
+        <form method="post" action="note">
+            <label for="title">Title: </label>
+            <input type="text" name="title" value="${title}"><br><br>
+            <label for="textarea">Contents: </label>
+            <textarea cols="20" rows="6" name="content">${content}</textarea><br><br>
+            <input type="submit" value="Save" name="save">
+        </form>
+        <c:if test="${invalid == true}">
+            <p>*Invalid entry. Please enter both, title and content.</p>
+        </c:if>
     </body>
 </html>

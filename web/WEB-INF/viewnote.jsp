@@ -13,6 +13,20 @@
         <title>View Page</title>
     </head>
     <body>
-
+        <h2>
+            Simple Note Keeper
+        </h2>
+        <h3>
+            View Note
+        </h3>
+        <strong>
+            Title:
+        </strong>
+        ${Note.title}<br><br>
+        <strong>
+            Contents:
+        </strong><br>
+        ${Note.content}<br><br>
+        <a href="note?edit">Edit</a>
     </body>
 </html>
